@@ -35,7 +35,13 @@ const MenuItem = styled.li`
 `;
 
 const Button = styled.button`
-    border: 2px solid black;
+    border: 2px solid white;
+    padding: 10px 15px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
 `
 const Navbar = () => {
     return (
@@ -45,13 +51,13 @@ const Navbar = () => {
                     <Logo>Agency</Logo>
                 </span>
                 <Menu>
-                    <MenuItem>HOME</MenuItem>
+                    <MenuItem>Home</MenuItem>
                     <MenuItem>Features</MenuItem>
                     <MenuItem>Services</MenuItem>
                     <MenuItem>Pricing</MenuItem>
                     <MenuItem>Contact</MenuItem>
                 </Menu>
-                <button>Join Now</button>
+                <Button>Join Today</Button>
             </Wrapper>
         </Container>
     )
