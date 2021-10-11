@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Women from "../img/women.png";
 
 const Container = styled.div`
   // height: calc(100vh - 50px);
@@ -32,12 +33,12 @@ const Info = styled.div`
 `;
 
 const Button = styled.button`
-  padding: 15px;
   background-color: darkblue;
   color: white;
   border-radius: 10px;
   font-weight: bold;
   border: none;
+  padding: 15px;
   letter-spacing: 2px:
   cursor: pointer;
 `;
@@ -54,11 +55,16 @@ const Phone = styled.span`
 
 const ContactText = styled.span`
   color: gray;
+  margin-top: 5px;
 `;
 
 const Right = styled.div`
   // height: calc(100vh - 50px);
   width: 40%;
+`;
+
+const Image = styled.img`
+  width: 100%;
 `;
 
 const Intro = () => {
@@ -79,7 +85,9 @@ const Intro = () => {
           </Contact>
         </Info>
       </Left>
-      <Right></Right>
+      <Right>
+        <Image src={Women}></Image>
+      </Right>
     </Container>
   );
 };
