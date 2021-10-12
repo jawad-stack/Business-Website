@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 const Container = styled.div`
   height: 100vh;
   overflow: hidden;
+  // position: relative;
 `;
 
 const IntroShape = styled.div`
@@ -15,7 +16,7 @@ const IntroShape = styled.div`
   left: 0;
   z-index: -1;
   clip-path: polygon(67% 0%, 100% 0%, 100% 100%, 55% 100%);
-  background-color: red;
+  background-color: crimson;
 `;
 
 const App = () => {

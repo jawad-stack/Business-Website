@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Women from "../img/women.png";
+import Women from "../img/woman.png";
+import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
-  // height: calc(100vh - 50px);
+  height: calc(100vh - 50px);
   display: flex;
   padding: 20px;
 `;
@@ -86,8 +87,9 @@ const Intro = () => {
         </Info>
       </Left>
       <Right>
-        <Image src={Women}></Image>
+        <Image src={Women} />
       </Right>
+      <AnimatedShapes />
     </Container>
   );
 };
