@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Features from "./components/Features";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 
@@ -21,11 +22,16 @@ const IntroShape = styled.div`
 
 const App = () => {
   return (
-    <Container>
-      <Navbar />
-      <Intro />
-      <IntroShape />
-    </Container>
+    <>
+      <Container>
+        <Navbar />
+        <Intro />
+        <IntroShape />
+      </Container>
+      <Container>
+        <Features />
+      </Container>
+    </>
   );
 };
 
